@@ -16,5 +16,3 @@ Start: `npm run dev`
 ## References
 
 [Cert](https://stepik.org/cert/3310493)
-
-https://refkeeper.netlify.app/
