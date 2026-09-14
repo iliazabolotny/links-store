@@ -1,4 +1,4 @@
-# RefKeeper
+# Links Store
 
 ## Technologies:
 
@@ -17,4 +17,4 @@ Start: `npm run dev`
 
 [Cert](https://stepik.org/cert/3310493)
 
-[RefKeeper](https://linksstore.vercel.app)
+[Links Store](https://linksstore.vercel.app)

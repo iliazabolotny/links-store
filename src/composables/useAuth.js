@@ -46,7 +46,7 @@ export function useAuth() {
   const resetPassword = async (email) => {
     return await handleRequest(async () => {
       const { data, error } = await supabase.auth.resetPasswordForEmail(email, {
-        redirectTo: 'https://refkeeper.netlify.app/reset-password',
+        redirectTo: 'https://linksstore.vercel.app/reset-password',
       })
       if (error) throw error
       return data
