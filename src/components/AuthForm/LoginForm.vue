@@ -78,7 +78,7 @@ const submitForm = async ({ valid }) => {
         {{ $form.password.error.message }}
       </Message>
     </div>
-    <span class="cursor-pointer mb-3 block" @click="emits('resetPassword')">Забыли пароль?</span>
+    <!-- <span class="cursor-pointer mb-3 block" @click="emits('resetPassword')">Забыли пароль?</span> -->
     <div class="grid grid-cols-2 gap-3">
       <Button type="submit" class="w-full" label="Вход" :loading="loading" />
       <!--<Button
