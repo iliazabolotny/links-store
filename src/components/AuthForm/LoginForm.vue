@@ -81,12 +81,13 @@ const submitForm = async ({ valid }) => {
     <span class="cursor-pointer mb-3 block" @click="emits('resetPassword')">Забыли пароль?</span>
     <div class="grid grid-cols-2 gap-3">
       <Button type="submit" class="w-full" label="Вход" :loading="loading" />
-      <Button
+      <!--<Button
         icon="pi pi-github"
         class="w-full"
         label="GitHub"
         severity="contrast"
-      />
+        @clik="signInWithGithub"
+      /> -->
     </div>
   </Form>
 </template>

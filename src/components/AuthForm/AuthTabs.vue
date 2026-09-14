@@ -25,9 +25,10 @@
       <TabPanel value="signup">
         <RegistrationForm />
       </TabPanel>
-      <TabPanel value="reset">
-        <ResetPasswordForm />
+      <!-- <TabPanel value="reset">/>
+        <ResetPasswordForm /> 
       </TabPanel>
+      -->
     </TabPanels>
   </Tabs>
 </template>

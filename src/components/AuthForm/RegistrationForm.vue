@@ -27,6 +27,13 @@
     if (!valid) return
 
     try {
+        await signUp({
+          email: formData.value.email,
+          password: formData.value.password,
+          firstname: formData.value.firstname,
+      })
+      await authStore.getUser()
+      await router.push('/')
     } catch {
       showToast('error', 'Ошибка регистрации', errorMessage.value)
     }
@@ -86,12 +93,13 @@
     </div>
     <div class="grid grid-cols-2 gap-3">
       <Button type="submit" class="w-full" label="Регистрация" :loading="loading" />
-      <Button
+      <!--<Button
         icon="pi pi-github"
         class="w-full"
         label="GitHub"
         severity="contrast"
-      />
+        @click="signInWithGithub"
+      /> -->
     </div>
   </Form>
 </template>
